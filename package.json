@@ -1,16 +1,15 @@
 {
-    "name": "YOUR_PACKAGE_NAME",
-    "version": "0.1.0",
-    "description": "",
-    "main": "./lib/YOUR_COMPONENT.js",
+    "name": "basic-modal-component1",
+    "version": "1.0.2",
+    "description": "a basic modal component for react",
+    "main": "./lib/Modal.js",
     "license": "MIT",
     "scripts": {
         "build": "webpack"
     },
     "peerDependencies": {
-        "prop-types": "^15.6.0",
-        "react": "^16.0.0",
-        "react-dom": "^16.0.0"
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2"
     },
     "devDependencies": {
         "babel-core": "^6.21.0",
@@ -20,7 +19,6 @@
         "babel-preset-stage-0": "^6.24.1",
         "css-loader": "^3.5.1",
         "path": "^0.12.7",
-        "prop-types": "^15.6.0",
         "react": "^16.0.0",
         "react-dom": "^16.0.0",
         "style-loader": "^1.1.3",

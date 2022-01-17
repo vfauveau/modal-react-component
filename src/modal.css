@@ -1,0 +1,89 @@
+.modal-component{
+    height: 100%
+}
+.modal {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 250px;
+    max-width: 500px;
+    width: 50%;
+    height: fit-content;
+    max-height: 90%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+    margin: 0 auto;
+    z-index: 100;
+    opacity: 0%;
+    top: 50%;
+    bottom: 25%;
+    left: 25%;
+    right: 25%;
+}
+.modal-message {
+    font-weight: 500;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    padding: 3%;
+}
+
+.modal-close {
+    position: absolute;
+    top: -11px;
+    right: -11px;
+    display: block;
+    width: 28px;
+    height: 28px;
+    background-size: contain;
+    background-position: center center;
+    border: none;
+    background-color: white;
+    border-radius: 50%;
+    border: 1px solid;
+    font-weight: bold;
+}
+
+.modal-page-wrapper {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(14, 13, 13);
+    opacity: 50%;
+    z-index: 2;
+}
+.modal-toggle {
+    display: block;
+    animation: fadeIn;
+    animation-duration: 0.4s;
+}
+.modal-toggle2 {
+    display: block;
+    animation: fadeIn100 forwards;
+    animation-duration: 0.4s;
+}
+
+/* animations for the wrapper and the modal*/
+@keyframes fadeIn {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 50%;
+    }
+}
+
+@keyframes fadeIn100 {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}

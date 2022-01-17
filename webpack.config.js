@@ -2,10 +2,10 @@ const path = require('path');
 
 module.exports = {
   mode: 'production',
-  entry: './src/YOUR_COMPONENT.js',
+  entry: './src/Modal.js',
   output: {
     path: path.resolve('lib'),
-    filename: 'YOUR_COMPONENT.js',
+    filename: 'Modal.js',
     libraryTarget: 'commonjs2',
   },
   module: {

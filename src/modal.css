@@ -87,3 +87,11 @@
         opacity: 100%;
     }
 }
+
+@media (max-width : 700px) {
+    .modal-close{
+        width: 20px;
+        height: 20px;
+        font-size: 12px;
+    }
+}

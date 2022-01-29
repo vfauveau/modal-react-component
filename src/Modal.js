@@ -30,6 +30,7 @@ const Modal = forwardRef((props, ref) => {
         closeButton.style.display = "none";
     }
     if (config.customContent !== undefined) {
+        props.message = "";
         return (
             <div className="modal-component">
                 <div onClick={hideModal} className="modal-page-wrapper"></div>
@@ -42,26 +43,27 @@ const Modal = forwardRef((props, ref) => {
                 </div>
             </div>
         );
-    }
-    return (
-        <div className="modal-component">
-            <div onClick={hideModal} className="modal-page-wrapper"></div>
-            <div className="modal">
-                <div>
-                    <p className="modal-message">{props.message}</p>
-                </div>
+    } else {
+        return (
+            <div className="modal-component">
+                <div onClick={hideModal} className="modal-page-wrapper"></div>
+                <div className="modal">
+                    <div>
+                        <p className="modal-message">{props.message}</p>
+                    </div>
 
-                <button onClick={hideModal} className="modal-close">
-                    X
-                </button>
+                    <button onClick={hideModal} className="modal-close">
+                        X
+                    </button>
+                </div>
             </div>
-        </div>
-    );
+        );
+    }
 });
 
 Modal.defaultProps = {
     showCloseButton: true,
     customContent: undefined,
-    message: "this is a default message, you can modify this by passing down a string to the message props. You can also give a custom component to the customContent prop"
+    message: "this is a default message, you can modify this by giving a string to the message prop of the Modal. You can also give a custom component to the customContent prop",
 };
 export default Modal;

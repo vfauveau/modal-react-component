@@ -1,7 +1,8 @@
 # **Basic Modal Component for react**
 
 This is a simple modal component for react;
-
+You can find the source code for this package here : https://github.com/vfauveau/modal-react-component 
+The link towards the npm page of the package : https://www.npmjs.com/package/basic-modal-component1
 ### Prerequisites
 
 1. node.js

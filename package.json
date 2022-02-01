@@ -1,9 +1,11 @@
 {
     "name": "basic-modal-component1",
-    "version": "1.0.5",
+    "version": "1.0.7",
     "description": "a basic modal component for react",
     "main": "./lib/Modal.js",
     "license": "MIT",
+    "author":"Valentin Fauveau",
+    "keywords":["react", "modal", "modal-component", "simple"],
     "scripts": {
         "build": "webpack"
     },
